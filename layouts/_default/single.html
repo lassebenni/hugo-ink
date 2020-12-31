@@ -39,14 +39,14 @@
 			</div>
 
 			<div> {{ with .NextInSection }}
-				Later:
+				Volgende:
 				<a href="{{ .Permalink }}">{{ .Date.Day }}-{{ .Date.Month }}-{{ .Date.Year }}: {{ .Title }} </a>
 				{{ end }}
 			</div>
 
 			<div>
 				{{ with .PrevInSection }}
-				Eerder:
+				Vorige:
 				<a href="{{ .Permalink }}">{{ .Date.Day }}-{{ .Date.Month }}-{{ .Date.Year }}: {{ .Title }} </a>
 				{{ end }}
 			</div>
