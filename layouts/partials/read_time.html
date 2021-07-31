@@ -1,0 +1,6 @@
+{{emojify ":book:"}} {{ $readTime := mul (div (countwords .Content) 200.0) 60 }}
+{{ $minutes := math.Floor (div $readTime 60) }}
+{{ $seconds := mod $readTime 60 }}
+
+Leestijd: {{ $minutes }} {{ cond (eq $minutes 1) "minuut" "minuten" }} 
+{{ $seconds }} {{ cond (eq $seconds 1) "seconde" "seconden" }}.
